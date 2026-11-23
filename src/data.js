@@ -199,9 +199,10 @@ export const projects = [
     tag: 'Freelance · 2025–26',
     year: 'Crypto trading platform',
     description:
-      'A crypto exchange where users buy and trade Bitcoin. I built the React and Tailwind front end and the Python back end.',
+      'A Nigerian exchange where users buy, sell and swap crypto (BTC, ETH, USDT, SOL) and gift cards for Naira, with live rates and NGN payouts. I built the React and Tailwind front end and the Python back end.',
     highlights: [],
     stack: ['React', 'Tailwind CSS', 'Python'],
+    image: { src: '/work/cheeseball.jpg', alt: 'Cheeseball homepage: Buy, Sell & Swap Crypto Instantly, with a live rates card for BTC, ETH, USDT and SOL in Naira', width: 1440, height: 768 },
     links: [{ label: 'Live site', href: 'https://cheeseballapp.com' }],
   },
   {
@@ -216,6 +217,7 @@ export const projects = [
       'Server-side verification of payment amounts to block underpaid transactions',
     ],
     stack: ['React', 'Tailwind CSS', 'Paystack', 'Flutterwave'],
+    image: { src: '/work/tala.jpg', alt: 'The Africa Laureate Awards homepage: All Award-Winning, Reader-Recommended Books, with a Submit Your Book link in the menu', width: 1440, height: 768 },
     links: [{ label: 'Live site', href: 'https://www.theafricalaureateawards.org' }],
   },
   {
@@ -233,9 +235,15 @@ export const projects = [
     title: 'ClientFlow',
     tag: 'My startup · In development',
     year: 'Cold email SaaS',
-    description: 'A subscription cold-email platform for businesses. I’m the founder and sole developer.',
-    highlights: [],
+    description:
+      'A subscription cold-email platform: businesses connect Gmail or Outlook, load a list, and ClientFlow spreads each sequence across their own inboxes at a safe pace. I’m the founder and sole developer.',
+    highlights: [
+      'Sends from the customer’s own Gmail and Outlook mailboxes, with per-inbox daily limits',
+      'Sequences stop automatically when someone replies, bounces or opts out; bounces and opt-outs are suppressed',
+      'Inbox warm-up that raises the daily sending ceiling over time',
+    ],
     stack: ['React', 'Node.js', 'VPS'],
+    image: { src: '/work/clientflow.jpg', alt: 'ClientFlow homepage: Cold email that sends from your own mailboxes, with a live send queue showing delivered, replied and opted-out contacts', width: 1440, height: 768 },
     links: [{ label: 'Preview', href: 'https://clientflow-io.vercel.app' }],
   },
   {
