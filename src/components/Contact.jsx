@@ -19,13 +19,13 @@ export default function Contact() {
     <section id="contact" className="scroll-mt-20 bg-ink text-paper">
       <div className="mx-auto max-w-5xl px-6 py-24 sm:py-32">
         <Reveal>
-          <p className="font-mono text-xs uppercase tracking-widest text-paper/50">
-            <span className="text-accent">06</span> — Contact
+          <p className="text-xs text-paper/50">
+            Contact
           </p>
-          <h2 className="mt-6 font-serif text-5xl leading-[1.05] sm:text-7xl">
+          <h2 className="mt-6 font-semibold text-5xl leading-[1.05] sm:text-7xl">
             Have a role or a product
             <br />
-            <span className="italic text-paper/60">that needs building?</span>
+            <span className="text-paper/60">that needs building?</span>
           </h2>
         </Reveal>
 
@@ -38,7 +38,7 @@ export default function Contact() {
           </a>
           <button
             onClick={copy}
-            className="rounded-full border border-paper/20 px-6 py-3 font-mono text-sm transition-colors hover:border-paper"
+            className="rounded-full border border-paper/20 px-6 py-3 text-sm transition-colors hover:border-paper"
           >
             {copied ? 'Copied ✓' : profile.email}
           </button>
@@ -64,12 +64,12 @@ export default function Contact() {
           <div>
             <p className="text-paper/50">LinkedIn</p>
             <a href={profile.linkedin} target="_blank" rel="noreferrer" className="mt-1 block hover:text-accent">
-              adeyemi-pelumi ↗
+              Adeyemi Pelumi Daniel ↗
             </a>
           </div>
         </Reveal>
 
-        <p className="mt-20 font-mono text-xs text-paper/40">
+        <p className="mt-20 text-xs text-paper/40">
           © {new Date().getFullYear()} {profile.name} · Built with React & Tailwind
         </p>
       </div>

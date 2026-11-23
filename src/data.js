@@ -5,23 +5,23 @@ export const profile = {
   name: 'Adeyemi Pelumi Daniel',
   handle: 'Hexcode',
   role: 'Full-Stack Developer',
-  location: 'Ibadan, Nigeria — open to remote',
+  location: 'Ibadan, Nigeria — open to remote, hybrid and contract roles',
   email: 'adeyemipelumi1980@gmail.com',
   phone: '+234 902 161 5849',
   github: 'https://github.com/animinatesphere',
-  linkedin: 'https://linkedin.com/in/adeyemi-pelumi',
+  linkedin: 'https://www.linkedin.com/in/adeyemi-pelumi-daniel-a98727372/',
   // Put your CV PDF in /public and keep this path, or set to null to hide the button.
   cv: '/Adeyemi_Pelumi_Daniel_CV.pdf',
   photo: '/adeyemi-pelumi-daniel.jpg',
   headline: 'I build web and mobile products end to end — from the interface to the API to the App Store.',
   summary:
-    'Full-stack developer with 3+ years of experience building and shipping products. I work across React and Next.js front ends, Node.js and Python (FastAPI) back ends with MongoDB and PostgreSQL, and React Native apps — two of them live on the App Store. I’ve built booking and subscription systems, admin dashboards, AI receptionists, social platforms, real-time video and payments.',
+    'Full-stack developer building web apps since 2023 (certified web developer, Sheda House Academy), with 1.5+ years of professional experience shipping production web and mobile products. I work across React and Next.js front ends, Node.js and Python (FastAPI) back ends with MongoDB and PostgreSQL, and React Native apps — two of them live on the App Store. I’ve built booking and subscription systems, admin dashboards, AI receptionists, social platforms, real-time video and payments (Stripe, Paystack, Flutterwave).',
 }
 
 export const stats = [
-  { value: '3+', label: 'years shipping' },
+  { value: '1.5+', label: 'years professional' },
   { value: '2', label: 'apps on the App Store' },
-  { value: '2', label: 'tech lead roles' },
+  { value: '2023', label: 'building since' },
   { value: 'Web · Mobile · API', label: 'end to end' },
 ]
 
@@ -31,11 +31,11 @@ export const stats = [
 
 export const about = {
   intro: [
-    'I’m Adeyemi Pelumi Daniel — Hexcode online — a full-stack developer who likes owning a product from the first screen to the last API call. Since April 2026 I’ve been tech lead at Cleaniq Services, a cleaning company in Greater Manchester, where I run the whole software side: the public website, the booking and payments system, the admin panel the team runs the business from, two App Store apps and an AI receptionist. I’m also tech lead at SiteOrbit, a platform for learning tech skills and launching a tech career.',
-    'Before that I worked on the front end — at Dimatech Consultancy from 2024 to August 2025, then a three-month contract at Roots and Square building Siiqo, a commerce platform for small businesses. That’s where I picked up my eye for clean, fast, well-animated interfaces. In my own time I built iConnect, a social platform with messaging, live video and an AI assistant, on a Python back end.',
+    'I’m Adeyemi Pelumi Daniel — Hexcode online — a full-stack developer who likes owning a product from the first screen to the last API call. Since May 2026 I’ve been the full-stack developer at Cleaniq Services, a cleaning company in Greater Manchester, where I built and maintain the whole software side: the public website, the booking and payments system, the admin panel the team runs the business from, two App Store apps and an AI receptionist. I’m also tech lead at SiteOrbit, a platform for learning tech skills and launching a tech career.',
+    'I got certified as a web developer at Sheda House Academy in October 2023 and spent the next year building my own projects. I started professionally on the front end — as an intern at Dimatech Consultancy (April–August 2025), then at Roots and Square building Siiqo, a commerce platform for small businesses (August–October 2025). From November 2025 to April 2026 I freelanced: a crypto trading platform (Cheeseball), the book submission and payment flow for The Africa Laureate Awards, and an agency site for BlackQuill — while building my own SaaS, ClientFlow. Most recently I built iConnect, a social platform with messaging, live video and an AI assistant, on a Python back end.',
   ],
   lookingFor:
-    'A full-time or contract role on a product team, remote. Full-stack, front-end heavy or React Native — I’m happy anywhere on the stack.',
+    'A junior or mid-level full-stack role — full-time or contract, remote, hybrid or UK-based. Full-stack, front-end heavy or React Native — I’m happy anywhere on the stack.',
   offers: [
     {
       title: 'Full products, start to finish',
@@ -47,7 +47,7 @@ export const about = {
     },
     {
       title: 'Payments and subscriptions',
-      body: 'Stripe checkout, saved cards, recurring charges with retries, fees and invoices. Paystack too.',
+      body: 'Stripe checkout, saved cards, recurring charges with retries, fees and invoices. Paystack and Flutterwave too, with amounts verified on the server.',
     },
     {
       title: 'AI that does real work',
@@ -69,9 +69,13 @@ export const about = {
 export const caseStudy = {
   title: 'Cleaniq Services',
   subtitle: 'The full software platform for a Greater Manchester cleaning company',
-  role: 'Tech Lead (Web + Mobile)',
-  period: 'April 2026 — Present',
-  links: [{ label: 'Live site', href: 'https://cleaniqservices.com' }],
+  role: 'Full-Stack Developer (Web + Mobile)',
+  period: 'May 2026 — Present',
+  links: [
+    { label: 'Live site', href: 'https://cleaniqservices.com' },
+    { label: 'Customer app', href: 'https://apps.apple.com/ng/app/cleaniq-services/id6787302038' },
+    { label: 'Cleaner app', href: 'https://apps.apple.com/ng/app/cleaniq-service-pro/id6784165706' },
+  ],
   // Screenshots live in /public/work.
   siteImage: { src: '/work/cleaniq-site.jpg', alt: 'Cleaniq Services homepage: house cleaning services in Manchester, with Book and Get a quote buttons and App Store and Android download links' },
   appImages: [
@@ -154,7 +158,7 @@ export const projects = [
   },
   {
     title: 'Siiqo',
-    tag: 'Contract · Roots and Square',
+    tag: 'Roots and Square · 2025',
     year: 'Commerce platform',
     description:
       'A commerce platform for small businesses: sellers get their own store at their-brand.siiqo.com and Pay Links they can share anywhere, with payments confirmed by Siiqo instead of screenshots, and a Trust Passport buyers can check.',
@@ -169,7 +173,7 @@ export const projects = [
   },
   {
     title: 'iConnect',
-    tag: 'Personal · Full-stack',
+    tag: 'Personal · Oct–Nov 2026',
     year: 'Social community platform',
     description:
       '“Your online worlds. One home.” A web-first platform bringing community, conversations, video and member marketplaces together, with a FastAPI back end and provider keys kept on the server.',
@@ -191,32 +195,52 @@ export const projects = [
     ],
   },
   {
+    title: 'Cheeseball',
+    tag: 'Freelance · 2025–26',
+    year: 'Crypto trading platform',
+    description:
+      'A crypto exchange where users buy and trade Bitcoin. I built the React and Tailwind front end and the Python back end.',
+    highlights: [],
+    stack: ['React', 'Tailwind CSS', 'Python'],
+    links: [{ label: 'Live site', href: 'https://cheeseballapp.com' }],
+  },
+  {
+    title: 'The Africa Laureate Awards',
+    tag: 'Freelance · 2025–26',
+    year: 'Book submissions & payments',
+    description:
+      'The book submission and payment flow for a literary award for self-published and independent African authors — Paystack for Naira and Flutterwave for USD.',
+    highlights: [
+      'Multi-step submission form in React and Tailwind',
+      'Paystack (NGN) and Flutterwave (USD) checkout',
+      'Server-side verification of payment amounts to block underpaid transactions',
+    ],
+    stack: ['React', 'Tailwind CSS', 'Paystack', 'Flutterwave'],
+    links: [{ label: 'Live site', href: 'https://www.theafricalaureateawards.org' }],
+  },
+  {
     title: 'BlackQuill',
-    tag: 'Web · Agency site',
+    tag: 'Freelance · Pre-launch',
     year: 'Digital agency for publishing',
     description:
       'Website for BlackQuill Digital Agency, a Nigerian studio that builds bespoke websites and e-commerce for authors, publishers and literary organisations.',
     highlights: [],
-    stack: [], // add the tech you used
+    stack: [],
     image: { src: '/work/blackquill.jpg', alt: 'BlackQuill homepage: Hi, welcome to BlackQuill Digital Agency, with an author website concept card' },
-    links: [{ label: 'Live site', href: 'https://blackquill-two.vercel.app' }],
+    links: [{ label: 'Preview', href: 'https://blackquill-two.vercel.app' }],
   },
   {
-    title: 'LuxeStore Admin',
-    tag: 'Frontend · Dashboard',
-    year: 'Admin dashboard',
-    description: 'A fashion-store admin dashboard built for day-to-day store management.',
-    highlights: [
-      'Collapsible sidebar, stat cards and a sales chart',
-      'Paginated product table',
-      'Add, edit and delete product flows with image upload',
-    ],
-    stack: ['React', 'Tailwind CSS'],
-    links: [],
+    title: 'ClientFlow',
+    tag: 'My startup · In development',
+    year: 'Cold email SaaS',
+    description: 'A subscription cold-email platform for businesses. I’m the founder and sole developer.',
+    highlights: [],
+    stack: ['React', 'Node.js', 'VPS'],
+    links: [{ label: 'Preview', href: 'https://clientflow-io.vercel.app' }],
   },
   {
     title: 'School Portal',
-    tag: 'Frontend · Dimatech',
+    tag: 'Dimatech · 2025',
     year: 'Education portal',
     description:
       'A responsive school portal built at Dimatech Consultancy, working with designers and backend developers.',
@@ -236,17 +260,16 @@ export const projects = [
 
 export const experience = [
   {
-    role: 'Tech Lead (Web + Mobile)',
+    role: 'Full-Stack Developer (Web + Mobile)',
     company: 'Cleaniq Services',
     place: 'Manchester, UK · Remote',
-    period: 'Apr 2026 — Present',
+    period: 'May 2026 — Present',
     points: [
-      'Lead and own the public website, admin panel, backend API, two mobile apps and an AI receptionist.',
-      'Built the booking and quote system (React 19, Node.js/Express, MongoDB) with Stripe checkout and quotes saved as leads.',
+      'Built the booking and quote system (React 19, Vite, Tailwind, Node.js/Express, MongoDB) with Stripe checkout and every quote saved as a lead.',
       'Implemented Stripe subscriptions: automatic charging before each visit with retries, pause/cancel fees and rolling visit creation.',
-      'Built a single admin panel for jobs, calendar, rota, invoices, CRM, staff pay and email campaigns.',
+      'Built a single admin panel for jobs, calendar, rota, PDF invoices, CRM, staff pay, commissions and email campaigns.',
       'Built an AI receptionist on WhatsApp and phone (Twilio, Claude API) that quotes from live prices.',
-      'Shipped two React Native (Expo) apps to the App Store with over-the-air updates.',
+      'Shipped two React Native (Expo) apps to the App Store with chat, push notifications and over-the-air updates.',
       'Pre-rendered pages for SEO, 12 location landing pages and an AI blog autopilot.',
     ],
   },
@@ -254,31 +277,48 @@ export const experience = [
     role: 'Tech Lead',
     company: 'SiteOrbit',
     place: 'Remote',
-    period: '',
+    period: '2026 — Present',
     points: [
-      'Lead the technical side of SiteOrbit, a platform for learning tech skills and launching a tech career.',
+      'Lead the technical side of SiteOrbit, including its courses and learning paths for new developers.',
     ],
   },
   {
-    role: 'Frontend Developer (Contract)',
+    role: 'Freelance Full-Stack Developer',
+    company: 'Freelance',
+    place: 'Remote',
+    period: 'Nov 2025 — Apr 2026',
+    points: [
+      'Cheeseball — built the React and Tailwind front end and Python back end of a crypto trading platform.',
+      'The Africa Laureate Awards — built the book submission and payment flow with Paystack (NGN) and Flutterwave (USD), with server-side amount verification.',
+      'BlackQuill Digital Agency — website for an agency serving authors and publishers (pre-launch).',
+    ],
+  },
+  {
+    role: 'Frontend Developer',
     company: 'Roots and Square',
-    place: 'Siiqo · 3-month contract',
-    period: 'Oct 2025 — Dec 2025',
+    place: 'Siiqo',
+    period: 'Aug 2025 — Oct 2025',
     points: [
       'Built the front end of Siiqo, a Next.js commerce platform with a buyer marketplace and vendor storefronts.',
-      'Added animations and micro-interactions with Framer Motion and GSAP.',
-      'Improved load times through lazy-loading and responsive image optimisation.',
+      'Improved load times with lazy-loading and responsive image optimisation; added Framer Motion and GSAP micro-interactions.',
     ],
   },
   {
     role: 'Frontend Developer Intern',
     company: 'Dimatech Consultancy',
     place: '',
-    period: '2024 — Aug 2025',
+    period: 'Apr 2025 — Aug 2025',
     points: [
       'Built a responsive school portal using React, Framer Motion and GSAP.',
       'Worked with designers and backend developers to deliver pixel-perfect UI.',
     ],
+  },
+  {
+    role: 'Web Developer Certification',
+    company: 'Sheda House Academy',
+    place: 'Education',
+    period: 'Oct 2023',
+    points: ['Certified web developer; followed by a year of independent projects in React, Node.js and Python.'],
   },
 ]
 
@@ -288,8 +328,8 @@ export const marquee = ['React', 'Next.js', 'TypeScript', 'Node.js', 'Python', '
 export const skills = [
   { group: 'Frontend', items: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'HTML5 & CSS3', 'Vite', 'Tailwind CSS', 'Framer Motion', 'GSAP'] },
   { group: 'Mobile', items: ['React Native', 'Expo (EAS builds, OTA)', 'Push notifications', 'Flutter', 'Ionic'] },
-  { group: 'Backend', items: ['Node.js', 'Express', 'Python', 'FastAPI', 'REST APIs', 'JWT auth', 'Rate limiting'] },
+  { group: 'Backend', items: ['TypeScript', 'Node.js', 'Express', 'Python', 'FastAPI', 'REST APIs', 'JWT auth', 'Rate limiting'] },
   { group: 'Data', items: ['PostgreSQL', 'MongoDB (Mongoose)', 'Database migrations'] },
-  { group: 'Integrations', items: ['Stripe', 'Paystack', 'Twilio (WhatsApp, voice)', 'Claude API', 'Gemini API', 'LiveKit', 'Cloudinary', 'SMS & email automation'] },
-  { group: 'Practice', items: ['Git & GitHub', 'Figma', 'Responsive design', 'Performance', 'Accessibility', 'SEO / pre-rendering'] },
+  { group: 'Integrations', items: ['Stripe', 'Paystack', 'Flutterwave', 'Twilio (WhatsApp, voice)', 'Claude API', 'Gemini API', 'LiveKit', 'Cloudinary', 'SMS & email automation'] },
+  { group: 'Practice', items: ['Git & GitHub', 'GitHub Actions (CI)', 'Jest / Vitest / Playwright', 'VPS & Vercel deploys', 'Figma', 'Responsive design', 'Performance', 'Accessibility', 'SEO / pre-rendering'] },
 ]

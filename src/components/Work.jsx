@@ -5,21 +5,20 @@ import Reveal from './Reveal'
 import Section from './Section'
 import Shot from './Shot'
 
-function Project({ p, i }) {
+function Project({ p }) {
   const [open, setOpen] = useState(false)
   const hasMore = p.highlights.length > 0
 
   return (
     <Reveal as="article" className="group border-b border-line py-10 first:pt-0" delay={0.05}>
       <div className="grid gap-6 md:grid-cols-[120px_1fr]">
-        <div className="font-mono text-xs text-muted">
-          <div>{String(i + 1).padStart(2, '0')}</div>
-          <div className="mt-1">{p.tag}</div>
+        <div className="text-sm text-muted">
+          <div>{p.tag}</div>
         </div>
 
         <div>
           <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
-            <h3 className="font-serif text-3xl sm:text-4xl">
+            <h3 className="text-3xl font-semibold sm:text-4xl">
               {p.title}
               <span className="ml-3 align-middle font-sans text-sm text-muted">{p.year}</span>
             </h3>
@@ -63,7 +62,7 @@ function Project({ p, i }) {
           {p.stack.length > 0 && (
             <ul className="mt-5 flex flex-wrap gap-2">
               {p.stack.map((s) => (
-                <li key={s} className="rounded-full border border-line px-3 py-1 font-mono text-[11px] text-muted">
+                <li key={s} className="rounded-full border border-line px-3 py-1 text-[11px] text-muted">
                   {s}
                 </li>
               ))}
@@ -75,7 +74,7 @@ function Project({ p, i }) {
               <button
                 onClick={() => setOpen((o) => !o)}
                 aria-expanded={open}
-                className="mt-6 font-mono text-xs uppercase tracking-widest text-ink transition-colors hover:text-accent"
+                className="mt-6 text-xs text-ink transition-colors hover:text-accent"
               >
                 {open ? '− Hide details' : '+ What I built'}
               </button>
@@ -108,8 +107,8 @@ function Project({ p, i }) {
 export default function Work() {
   return (
     <Section id="projects" index="03" title="More work">
-      {projects.map((p, i) => (
-        <Project key={p.title} p={p} i={i} />
+      {projects.map((p) => (
+        <Project key={p.title} p={p} />
       ))}
     </Section>
   )

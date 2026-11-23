@@ -7,7 +7,7 @@ import Shot from './Shot'
 function Box({ children, strong }) {
   return (
     <li
-      className={`rounded-lg border px-3 py-2 text-center font-mono text-xs ${
+      className={`rounded-lg border px-3 py-2 text-center text-xs ${
         strong ? 'border-ink bg-ink text-paper' : 'border-line bg-paper'
       }`}
     >
@@ -19,7 +19,7 @@ function Box({ children, strong }) {
 function Column({ label, items, strong }) {
   return (
     <div>
-      <p className="mb-3 text-center font-mono text-[10px] uppercase tracking-widest text-muted">{label}</p>
+      <p className="mb-3 text-center text-xs text-muted">{label}</p>
       <ul className="space-y-2">
         {items.map((it) => (
           <Box key={it} strong={strong}>
@@ -43,7 +43,7 @@ export default function CaseStudy() {
     <Section id="work" index="02" title="Case study">
       <Reveal>
         <div className="flex flex-wrap items-baseline justify-between gap-4">
-          <h3 className="font-serif text-4xl sm:text-6xl">{c.title}</h3>
+          <h3 className="font-semibold text-4xl sm:text-6xl">{c.title}</h3>
           <div className="flex gap-4 text-sm">
             {c.links.map((l) => (
               <a
@@ -63,10 +63,10 @@ export default function CaseStudy() {
 
       <div className="mt-12 grid gap-10 md:grid-cols-[1fr_2fr]">
         <Reveal>
-          <p className="font-mono text-xs uppercase tracking-widest text-muted">My role</p>
+          <p className="text-xs text-muted">My role</p>
           <p className="mt-2">{c.role}</p>
-          {c.period && <p className="mt-1 font-mono text-xs text-muted">{c.period}</p>}
-          <p className="mt-6 font-mono text-xs uppercase tracking-widest text-muted">What I own</p>
+          {c.period && <p className="mt-1 text-xs text-muted">{c.period}</p>}
+          <p className="mt-6 text-xs text-muted">What I own</p>
           <ul className="mt-3 flex flex-wrap gap-2">
             {c.owned.map((o) => (
               <li key={o} className="rounded-full bg-accent/10 px-3 py-1 text-xs text-accent">
@@ -76,7 +76,7 @@ export default function CaseStudy() {
           </ul>
         </Reveal>
         <Reveal delay={0.05}>
-          <p className="font-mono text-xs uppercase tracking-widest text-muted">The brief</p>
+          <p className="text-xs text-muted">The brief</p>
           <p className="mt-2 text-lg leading-relaxed">{c.brief}</p>
         </Reveal>
       </div>
@@ -92,11 +92,11 @@ export default function CaseStudy() {
           <img src={c.siteImage.src} alt={c.siteImage.alt} loading="lazy" width="1440" height="814" className="block h-auto w-full" />
         </a>
         </Shot>
-        <p className="mt-3 font-mono text-xs text-muted">The public website — booking, quotes and app downloads</p>
+        <p className="mt-3 text-xs text-muted">The public website — booking, quotes and app downloads</p>
       </Reveal>
 
-      <Reveal className="mt-10 rounded-2xl bg-[#0b4d3a] p-6 sm:p-10">
-        <p className="font-mono text-xs uppercase tracking-widest text-white/60">Cleaniq Service Pro — the worker app on the App Store</p>
+      <Reveal className="mt-10 rounded-2xl bg-indigo p-6 sm:p-10">
+        <p className="text-xs text-white/60">Cleaniq Service Pro — the worker app on the App Store</p>
         <ul className="mt-6 grid grid-cols-3 gap-3 sm:gap-6">
           {c.appImages.map((img, i) => (
             <motion.li
@@ -123,7 +123,7 @@ export default function CaseStudy() {
       </Reveal>
 
       <Reveal className="mt-14 rounded-2xl border border-line bg-white/50 p-6 sm:p-8">
-        <p className="font-mono text-xs uppercase tracking-widest text-muted">How it fits together</p>
+        <p className="text-xs text-muted">How it fits together</p>
         <div className="mt-6 grid gap-6 md:grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr]">
           <Column label="People come in via" items={c.system.inputs} />
           <Arrow />
@@ -138,8 +138,7 @@ export default function CaseStudy() {
       <div className="mt-14 grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
         {c.modules.map((m, i) => (
           <Reveal key={m.title} delay={(i % 3) * 0.05} className="border-t border-line pt-5">
-            <p className="font-mono text-xs text-accent">{String(i + 1).padStart(2, '0')}</p>
-            <h4 className="mt-1 font-serif text-2xl">{m.title}</h4>
+            <h4 className="mt-1 font-semibold text-2xl">{m.title}</h4>
             <ul className="mt-3 space-y-2">
               {m.points.map((pt) => (
                 <li key={pt} className="text-sm leading-relaxed text-muted">
@@ -154,7 +153,7 @@ export default function CaseStudy() {
       <Reveal className="mt-14">
         <ul className="flex flex-wrap gap-2">
           {c.stack.map((s) => (
-            <li key={s} className="rounded-full border border-line px-3 py-1 font-mono text-[11px] text-muted">
+            <li key={s} className="rounded-full border border-line px-3 py-1 text-[11px] text-muted">
               {s}
             </li>
           ))}
