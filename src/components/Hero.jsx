@@ -1,13 +1,14 @@
 import { motion, useReducedMotion } from 'framer-motion'
 import { profile, stats } from '../data'
 import CountUp from './CountUp'
+import AdireBand from './AdireBand'
 
 const ease = [0.22, 1, 0.36, 1]
 
 // Each word slides up from behind a mask, one after another.
 function Words({ text, start = 0, reduce }) {
   return text.split(' ').map((w, i) => (
-    <span key={i} className="inline-block overflow-hidden pr-[0.06em] pb-[0.1em] align-bottom">
+    <span key={i} className="inline-block overflow-hidden mr-[0.22em] pb-[0.1em] align-bottom">
       {reduce ? (
         w
       ) : (
@@ -37,18 +38,18 @@ export default function Hero() {
 
   return (
     <section id="top" className="mx-auto max-w-5xl px-6 pt-36 pb-20 sm:pt-44">
-      <motion.p {...fade(0)} className="mb-8 flex items-center gap-3 font-mono text-xs uppercase tracking-widest text-muted">
+      <motion.p {...fade(0)} className="mb-8 flex items-center gap-3 text-xs text-muted">
         <span className="relative flex h-2 w-2">
-          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60" />
-          <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
+          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-kola opacity-60" />
+          <span className="relative inline-flex h-2 w-2 rounded-full bg-kola" />
         </span>
         Available for full-time & contract roles
       </motion.p>
 
-      <h1 className="font-serif text-5xl leading-[1.02] tracking-tight sm:text-7xl md:text-8xl">
+      <h1 className="text-5xl font-bold leading-[0.98] sm:text-7xl md:text-8xl">
         <Words text={`${profile.name},`} start={0.1} reduce={reduce} />
         <br />
-        <span className="italic text-muted">
+        <span className="text-muted">
           <Words text={`${profile.role.toLowerCase()}.`} start={0.35} reduce={reduce} />
         </span>
       </h1>
@@ -82,11 +83,15 @@ export default function Hero() {
         </a>
       </motion.div>
 
-      <motion.dl {...fade(0.75)} className="mt-20 grid gap-6 border-t border-line pt-8 grid-cols-2 sm:grid-cols-4">
+      <motion.div {...fade(0.7)} className="-mx-6 mt-16 overflow-hidden sm:mx-0 sm:rounded-lg">
+        <AdireBand />
+      </motion.div>
+
+      <motion.dl {...fade(0.75)} className="mt-10 grid gap-6 border-t border-line pt-8 grid-cols-2 sm:grid-cols-4">
         {stats.map((s) => (
           <div key={s.label}>
-            <dt className="font-mono text-xs uppercase tracking-widest text-muted">{s.label}</dt>
-            <dd className="mt-2 font-serif text-3xl">
+            <dt className="text-xs text-muted">{s.label}</dt>
+            <dd className="mt-2 text-3xl font-semibold">
               <CountUp value={s.value} />
             </dd>
           </div>

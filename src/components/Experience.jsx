@@ -17,10 +17,10 @@ export default function Experience() {
             <div>
               <h3 className="font-medium">{e.company}</h3>
               {e.place && <p className="mt-1 text-sm text-muted">{e.place}</p>}
-              {e.period && <p className="mt-1 font-mono text-xs text-muted">{e.period}</p>}
+              {e.period && <p className="mt-1 text-xs text-muted">{e.period}</p>}
             </div>
             <div>
-              <p className="font-serif text-2xl">{e.role}</p>
+              <p className="font-semibold text-2xl">{e.role}</p>
               <ul className="mt-3 space-y-2">
                 {e.points.map((pt) => (
                   <li key={pt} className="text-sm leading-relaxed text-muted">

@@ -53,7 +53,7 @@ export default function Nav() {
       }`}
     >
       <nav className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
-        <a href="#top" className="font-serif text-2xl italic leading-none">
+        <a href="#top" className="text-2xl font-bold leading-none">
           {profile.handle.toLowerCase()}
           <span className="text-accent">.</span>
         </a>
