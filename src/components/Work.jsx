@@ -49,8 +49,8 @@ function Project({ p }) {
                 src={p.image.src}
                 alt={p.image.alt}
                 loading="lazy"
-                width="1440"
-                height="814"
+                width={p.image.width || 1440}
+                height={p.image.height || 814}
                 className="block h-auto w-full transition-transform duration-700 ease-out group-hover:scale-[1.02]"
               />
             </a>
